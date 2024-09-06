@@ -1,55 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
+
+:root {
+    --verde-pretiado: #001524ff;
+    --verde-esclareado: #15616dff;
+    --creme: #ffecd1ff;
+    --laranja: #ff7d00ff;
+    --fonte-titulo: "Nerko One", cursive;
+    --fonte-texto: "Nunito", sans-serif;
 }
 
-:root{
-    --preto: #000000ff;
-    --vermelho: #ff0000ff;
-    --amarelo: #ffe100ff;
-    --fonte-primaria: "SUSE", sans-serif;
-    --fonte-segundaria: "Nunito", sans-serif;
-}
-
-body{
-    background-color: var(--amarelo);
-    font-family: var(--fonte-segundaria);
-    color: var(--preto);
-    min-height: 100vh;
+body 
+{
+    background-color: var(--verde-pretiado);
+    color: var(--creme);
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    min-height: 100vh;
+    font-family: var(--fonte-texto);
 }
 
-h1{
-    font-family: var(--fonte-primaria);
-    color: var(--preto);
-    font-size: 6em;
+h1
+{
+    font-family: var(--fonte-titulo);
+    color: var(--creme);
+    font-size: 2em;
 }
 
-h3{
-    color: var(--black);
-    font-family: var(--fonte-primaria);
-    font-size: 6em;
+h3
+{
+    font-family: var(--fonte-texto);
+    color: var(--creme);
+    font-size: 2em;
 }
 
-.menssagem{
+.mensagem
+{
     font-size: 1.5em;
-    color: var(--black);
+    color: var(--laranja);
     margin-top: 20px;
-    background-color: var(--red);
-    border-radius: 10px;
     padding: 20px;
+    background-color: var(--laranja);
+    border-radius: 25px;
 }
 
-.box{
-    border: 4px solid var(--red);
+.box
+{
+    border: 8px double var(--verde-esclareado);
+    border-radius: 25px;
     display: inline-block;
-    font: 5em;
-    padding: 20px;
-    margin: 20px;
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+    padding: 10px;
+    margin: 10px;
 }
