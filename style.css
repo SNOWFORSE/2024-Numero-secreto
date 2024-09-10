@@ -49,7 +49,7 @@ h3
 
 .box
 {
-    border: 8px double var(--verde-esclareado);
+    border: 8px double var(--creme);
     border-radius: 25px;
     display: inline-block;
     font-family: var(--fonte-titulo);
