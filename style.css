@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Silkscreen:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -6,18 +6,19 @@
 }
 
 :root {
-    --verde-pretiado: #001524ff;
-    --verde-esclareado: #15616dff;
-    --creme: #ffecd1ff;
-    --laranja: #ff7d00ff;
-    --fonte-titulo: "Nerko One", cursive;
-    --fonte-texto: "Nunito", sans-serif;
+    --vermelho-forte: #780000ff;
+    --vermelho-fogo: #c1121fff;
+    --areia: #fdf0d5ff;
+    --azul-escuro: #003049ff;
+    --azul-céu: #669bbcff;
+    --fonte-titulo: "Silkscreen", sans-serif;
+    --fonte-texto: "Chakra Petch", sans-serif;
 }
 
 body 
 {
-    background-color: var(--verde-pretiado);
-    color: var(--creme);
+    background-color: var(--areia);
+    color: var(--vermelho-forte);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,34 +31,41 @@ body
 h1
 {
     font-family: var(--fonte-titulo);
-    color: var(--creme);
+    color: var(--azul-escuro);
     font-size: 2em;
 }
 
 h3
 {
     font-family: var(--fonte-texto);
-    color: var(--creme);
+    color: var(--azul-céu);
     font-size: 2em;
 }
 
 .mensagem
 {
     font-size: 1.5em;
-    color: var(--laranjas);
+    color: var(--azul-escuro);
+    background-color: var(--azul-céu);
+    border-radius: 25px;
     margin-top: 20px;
     padding: 20px;
-    background-color: var(--verde-esclareado);
-    border-radius: 25px;
 }
 
 .box
 {
-    border: 8px double var(--laranja);
+    border: 8px double var(--vermelho-fogo);
     border-radius: 25px;
     display: inline-block;
-    font-family: var(--fonte-titulo);
+    font-family: var(--fonte-texto);
     font-size: 2em;
     padding: 10px;
     margin: 10px;
+}
+
+h2{
+    text-shadow: 3px 3px 3px var(--azul-escuro);
+    font-size: 4em;
+    color: var(--azul-céu)
+    
 }
