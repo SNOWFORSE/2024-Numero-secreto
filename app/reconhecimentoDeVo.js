@@ -1,24 +1,22 @@
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
 
-const ElementChute = document.getElementById('chute')
-
+const elementoChute = document.getElementById("chute")
 const recognition = new SpeechRecognition();
-recognition.lang = 'pt-br'
-recognition.start()
+recognition.lang = "pt-br";
+recognition.start();
 
-recognition.addEventListener('result', onSpeak)
-
+recognition.addEventListener("result", onSpeak)
 function onSpeak(e){
-    chute = (e.results[0][0].transcript)
-    exibeChuteNaTela(chute)
+    chute = e.results[0][0].transcript
+    exibeChute(chute)
+    verificaChute(chute)
 }
 
-function exibeChuteNaTela(chute){
-    ElementChute.innerHTML = `
-    <div>Você disse:</div>
-    <span class="box"> ${chute} </span>
+function exibeChute(chute){
+    elementoChute.innerHTML = `
+    <div> Você disse:</div>
+    <span class="box">${chute}</span>
     <div>O número secreto é maior </div>
     `
-    
 }

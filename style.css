@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+}
 
 :root {
     --verde-pretiado: #001524ff;
@@ -40,16 +44,16 @@ h3
 .mensagem
 {
     font-size: 1.5em;
-    color: var(--laranja);
+    color: var(--laranjas);
     margin-top: 20px;
     padding: 20px;
-    background-color: var(--laranja);
+    background-color: var(--verde-esclareado);
     border-radius: 25px;
 }
 
 .box
 {
-    border: 8px double var(--creme);
+    border: 8px double var(--laranja);
     border-radius: 25px;
     display: inline-block;
     font-family: var(--fonte-titulo);
